@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+@import '@fontsource-variable/space-grotesk/wght.css';
+
+body {
+  font-family: 'Space Grotesk Variable', sans-serif;
+}
+
+p, a {
+  font-family: 'JetBrains Mono Variable', monospace;
+}
