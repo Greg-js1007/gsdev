@@ -3,6 +3,10 @@
 @import '@fontsource-variable/jetbrains-mono/wght.css';
 @import '@fontsource-variable/space-grotesk/wght.css';
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Space Grotesk Variable', sans-serif;
 }
