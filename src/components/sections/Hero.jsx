@@ -1,21 +1,21 @@
 
 const Hero = () => {
     return(
-        <section className="">
+        <section className="w-full md:w-3/5">
             <div>
               Logo     
             </div>
-            <div>
+            <div className="w-auto">
                 <h1>
-                    <p className="text-2xl">Gregory Subero</p>
-                    <p className="text-xl">Software Developer</p>
-
+                    <p className="text-3xl">Gregory <br /> Subero</p>
+                    <p className="text-md pt-2">Software Developer</p>
                 </h1>
             </div>
-            <section>
-                <div>
-                    <p className="text-xs">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
-                    <p className="text-xs">
+            <section className="w-auto pt-2.5">
+                <div className="text-justify">
+                    <p className="text-sm">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
+                    <br />
+                    <p className="text-sm">
                         Me apasiona convertir problemas en soluciones innovadoras a travez de la tecnología. Soy T.S.U en informatica y llevo mas de 2 años trabajando como Desarrollador Web, donde he tenido la oportunidad de trabajar en diferentes tipos de proyectos, desde paginas web hasta aplicaciones web.
                     </p>
                 </div>
