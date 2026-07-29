@@ -14,8 +14,8 @@ const Hero = () => {
             </div>
             <section>
                 <div>
-                    <p className="text-sm">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
-                    <p className="text-sm">
+                    <p className="text-xs">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
+                    <p className="text-xs">
                         Me apasiona convertir problemas en soluciones innovadoras a travez de la tecnología. Soy T.S.U en informatica y llevo mas de 2 años trabajando como Desarrollador Web, donde he tenido la oportunidad de trabajar en diferentes tipos de proyectos, desde paginas web hasta aplicaciones web.
                     </p>
                 </div>
