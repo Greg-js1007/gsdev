@@ -1,11 +1,13 @@
 import './App.css'
-import Hero from './components/sections/Hero.jsx';
+import MainLayout from './layouts/MainLayouts.jsx';
+
 
 function App() {
 
   return (
     <>
-      <Hero />
+      <MainLayout>
+      </MainLayout>
     </>
   )
 }
