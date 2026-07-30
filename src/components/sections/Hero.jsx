@@ -1,7 +1,7 @@
 
 const Hero = () => {
     return(
-        <section className="w-full md:w-3/5">
+        <section className="w-full md:w-3/5 pt-5">
             <div>
               Logo     
             </div>
