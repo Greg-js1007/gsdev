@@ -1,15 +1,16 @@
 import Hero from "../components/sections/Hero";
+import Navbar from "../components/sections/Navbar";
 
 const MainLayout  = ({children}) => {
     return (
-        <div className="w-full mx-auto max-w-xs px-5 py-5">
+        <div className="w-full mx-auto max-w-xs">
             <header>
-                {children}
+                <Navbar />
             </header>
-            <main>
+            <main className="px-5">
                 <Hero />
             </main>
-            <footer>
+            <footer className="px-5">
                 {children}
             </footer>
         </div>
