@@ -6,9 +6,10 @@
 @theme {
   --font-primary: 'Space Grotesk Variable', sans-serif;
   --font-secondary: 'JetBrains Mono Variable', monospace;
-  --color-bg-primary: #030712; /* (midnight, casi negro azulado) */
+  --color-primary: #030712; /* (midnight, casi negro azulado) */
   --color-text-primary: #F9FAFB;  /*(blanco suave) */
-  --color-bg-darks: #0F172A / #111827; /* (cards y popovers) */
+  --color-bg-darks: #0F172A; /* (cards y popovers) */
+  --color-nav-primary: #04070f; 
   --color-secondary: #9CA3AF;  /* (muted) */
 }
 
@@ -17,6 +18,10 @@
 }
 
 @layer base{
+
+  body{
+    @apply bg-primary
+  }
   p{
     @apply text-secondary;
   }
