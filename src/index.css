@@ -6,8 +6,8 @@
 @theme {
   --font-primary: 'Space Grotesk Variable', sans-serif;
   --font-secondary: 'JetBrains Mono Variable', monospace;
-  --color-primary: #030712; /* (midnight, casi negro azulado) */
-  --color-text-primary: #F9FAFB;  /*(blanco suave) */
+  --color-primary-bg: #030712; /* (midnight, casi negro azulado) */
+  --color-primary-tx: #F9FAFB;  /*(blanco suave texto) */
   --color-bg-darks: #0F172A; /* (cards y popovers) */
   --color-nav-primary: #04070f; 
   --color-secondary: #9CA3AF;  /* (muted) */
