@@ -6,9 +6,11 @@ const Hero = () => {
               Logo     
             </div>
             <div className="w-auto">
-                <h1>
-                    <p className="text-3xl">Gregory <br /> Subero</p>
-                    <p className="text-md pt-2">Software Developer</p>
+                <h2 className="text-3xl">
+                    Gregory <br /> Subero <span>.</span>
+                </h2>
+                <h1 className="text-lg">
+                    Software Developer 
                 </h1>
             </div>
             <section className="w-auto pt-2.5">
