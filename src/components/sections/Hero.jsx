@@ -6,18 +6,18 @@ const Hero = () => {
               Logo     
             </div>
             <div className="w-auto">
-                <h2 className="text-3xl">
+                <h2 className="text-4xl font-bold text-primary-tx">
                     Gregory <br /> Subero <span>.</span>
                 </h2>
-                <h1 className="text-lg">
+                <h1 className="text-lg text-primary-tx/80">
                     Software Developer 
                 </h1>
             </div>
             <section className="w-auto pt-2.5">
-                <div className="text-justify">
-                    <p className="text-sm">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
+                <div className="text-justify ">
+                    <p className="text-sm leading-relaxed">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
                     <br />
-                    <p className="text-sm">
+                    <p className="text-sm leading-relaxed">
                         Me apasiona convertir problemas en soluciones innovadoras a travez de la tecnología. Soy T.S.U en informatica y llevo mas de 2 años trabajando como Desarrollador Web, donde he tenido la oportunidad de trabajar en diferentes tipos de proyectos, desde paginas web hasta aplicaciones web.
                     </p>
                 </div>
