@@ -3,8 +3,23 @@
 @import '@fontsource-variable/jetbrains-mono/wght.css';
 @import '@fontsource-variable/space-grotesk/wght.css';
 
+@theme {
+  --font-primary: 'Space Grotesk Variable', sans-serif;
+  --font-secondary: 'JetBrains Mono Variable', monospace;
+  --color-bg-primary: #030712; /* (midnight, casi negro azulado) */
+  --color-text-primary: #F9FAFB;  /*(blanco suave) */
+  --color-bg-darks: #0F172A / #111827; /* (cards y popovers) */
+  --color-secondary: #9CA3AF;  /* (muted) */
+}
+
 *{
   box-sizing: border-box;
+}
+
+@layer base{
+  p{
+    @apply text-secondary;
+  }
 }
 
 body {
