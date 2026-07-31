@@ -3,7 +3,7 @@
 const NavLink = ({href, children, number}) => {
     return(
         <ul>
-            <li >
+            <li className="border-b border-primary-tx/50">
                 <span>
                     {number}
                 </span>
