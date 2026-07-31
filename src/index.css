@@ -8,6 +8,7 @@
   --font-secondary: 'JetBrains Mono Variable', monospace;
   --color-primary-bg: #030712; /* (midnight, casi negro azulado) */
   --color-primary-tx: #F9FAFB;  /*(blanco suave texto) */
+  --color-secundary-tx: #20c8ff; /*(azul cian) */
   --color-bg-darks: #0F172A; /* (cards y popovers) */
   --color-nav-primary: #04070f; 
   --color-secondary: #9CA3AF;  /* (muted) */
