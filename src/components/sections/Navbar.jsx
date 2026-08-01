@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import {Menu} from 'lucide-react';
+import { X } from 'lucide-react';
 import NavLink from "../ui/NavLink";
 
 const Navbar = () => {
@@ -17,23 +18,30 @@ const Navbar = () => {
     ]
 
     return(
-        <nav className="fixed z-50 inset-x-0 top-0 lg:hidden flex justify-between items-center w-full  bg-nav-primary py-5 border-b-[0.5px] border-b-primary-tx/50">
+        <>
+        <nav className="fixed absolute z-50 inset-x-0 top-0 lg:hidden flex justify-between items-center w-full  bg-nav-primary py-5 border-b-[0.5px] border-b-primary-tx/50">
             <div className="text-primary-tx pl-5">
                 <h2>Gregory Subero. / Dev </h2>
             </div>
-            <div className="text-primary-tx pr-5">
-                <Menu />
+            <div className="text-primary-tx md:hidden flex items-center justify-center pr-5">   
+                <button className="border rounded-full p-1.5 border-primary-tx/10 " onClick={toggleMenu}>
+                    {isMenuOpen ? (<X onClick={closeMenu} />) : (<Menu />)}
+                </button>
             </div>
-            {isMenuOpen &&(
-                <div id="menu-mobile" className="flex flex-col gap-y-4" >
-                {navLinks.map((link) => (
-                    <NavLink key={link.number} href={link.href} number={link.number}>
-                        {link.text}
-                    </NavLink>
-                ))}
-            </div>
-            )}
         </nav>
+        <div className="transition-all ease-in-out duration-500">
+            {isMenuOpen && (
+                <div id="menu-mobile" className="flex flex-col gap-y-4 px-5 py-5 relative top-20" >
+                    {navLinks.map((link) => (
+                        <NavLink key={link.number} href={link.href} number={link.number}>
+                            {link.text}
+                        </NavLink>
+                    ))}
+                </div>
+            )}
+        </div>
+        </>
+        
     )
 }
 
