@@ -18,7 +18,7 @@ const Hero = () => {
                     <p className="text-sm leading-relaxed">Creando Experiencias Digitales, experiencias y soluciones from Caracas, Venezuela</p>
                     <br />
                     <p className="text-sm leading-relaxed">
-                        Me apasiona convertir problemas en soluciones innovadoras a travez de la tecnología. Soy T.S.U en informatica y llevo mas de 2 años trabajando como Desarrollador Web, donde he tenido la oportunidad de trabajar en diferentes tipos de proyectos, desde paginas web hasta aplicaciones web.
+                        Me apasiona convertir problemas en soluciones innovadoras a travez¡s de la tecnología. Soy T.S.U en informatica y llevo mas de 2 años trabajando como Desarrollador Web, donde he tenido la oportunidad de trabajar en diferentes tipos de proyectos, desde paginas web hasta aplicaciones web.
                     </p>
                 </div>
             </section>

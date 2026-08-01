@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className="text-primary-tx md:hidden flex items-center justify-center pr-5">   
                 <button className="border rounded-full p-1.5 border-primary-tx/10 " onClick={toggleMenu}>
-                    {isMenuOpen ? (<X onClick={closeMenu} />) : (<Menu />)}
+                    {isMenuOpen ? (<X onClick={closeMenu} />) : (<Menu onClick={closeMenu} />)}
                 </button>
             </div>
         </nav>
