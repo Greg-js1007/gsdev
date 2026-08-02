@@ -1,5 +1,12 @@
+import Chip from "../ui/Chip";
+
 
 const Hero = () => {
+
+    const chips = [
+        {id: 1, number: "5+", text: "Proyectos" },
+        {id: 2, number: "3+", text: "años de experiencia" },
+    ]
     return(
         <section className="w-full md:w-3/5 pt-20">
             <div>
@@ -22,6 +29,12 @@ const Hero = () => {
                     </p>
                 </div>
             </section>
+            <section className="flex flex-wrap gap-2 py-5">
+                {chips.map((chip) => (
+                    <Chip key={chip.id} number={chip.number} text={chip.text} />
+                ))}
+            </section>
+                
         </section>
     )
 }
