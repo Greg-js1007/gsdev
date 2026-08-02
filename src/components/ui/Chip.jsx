@@ -1,12 +1,10 @@
 
 const Chip = ({number, text}) => {
     return (
-        <section>
-            <div className="rounded-lg flex gap-2">
-                <h2 className="text-lg text-primary-tx/80">{number}</h2>
-                <p className="text-sm text-primary-tx/80">{text}</p>
-            </div>
-        </section>
+        <div className="rounded-2xl gap-2 items-center border inline-flex px-2 py-1.5 border-secundary-tx bg-blue-900/50">
+            <h2 className="text-[10px] text-secundary-tx">{number}</h2>
+            <p className="text-[10px] text-secundary-tx">{text}</p>
+        </div>
     )
 }
 
