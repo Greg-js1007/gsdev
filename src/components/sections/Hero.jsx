@@ -1,4 +1,7 @@
 import Chip from "../ui/Chip";
+import SocialLink from "../ui/SocialLinks";
+import { FiGithub, FiLinkedin} from 'react-icons/fi';
+import { FaRegEnvelope } from "react-icons/fa";
 
 
 const Hero = () => {
@@ -6,6 +9,11 @@ const Hero = () => {
     const chips = [
         {id: 1, number: "5+", text: "Proyectos" },
         {id: 2, number: "3+", text: "años de experiencia" },
+    ]
+    const social = [
+        {id: 1, icon: FiGithub, url: "https://github.com/Greg-js1007"},
+        {id: 2, icon: FiLinkedin, url: "https://www.linkedin.com/in/gregorysubero"},
+        {id: 3, icon: FaRegEnvelope, url: "mailto:gsuberodev@gmail.com"},
     ]
     return(
         <section className="w-full md:w-3/5 pt-20">
@@ -32,6 +40,11 @@ const Hero = () => {
             <section className="flex flex-wrap gap-2 py-5">
                 {chips.map((chip) => (
                     <Chip key={chip.id} number={chip.number} text={chip.text} />
+                ))}
+            </section>
+            <section className="flex gap-5">
+                {social.map((item) => (
+                    <SocialLink key={item.id} icon={item.icon} url={item.url} />
                 ))}
             </section>
                 
