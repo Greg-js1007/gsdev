@@ -1,9 +1,6 @@
 import CardStack from "../ui/CardStack";
 import { Boxes } from 'lucide-react';
 
-
-
-
 const TechStack = () => {
     const Stacks = [
         { title: "React / Next.js", description: "Interfaces declarativas, escalables y de alto rendimiento.", icon: Boxes, label: "Frontend Core" },
