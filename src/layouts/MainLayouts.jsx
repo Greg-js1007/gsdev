@@ -1,5 +1,6 @@
 import Hero from "../components/sections/Hero";
 import Navbar from "../components/sections/Navbar";
+import TechStack from "../components/sections/TechStack";
 
 const MainLayout  = ({children}) => {
     return (
@@ -9,6 +10,7 @@ const MainLayout  = ({children}) => {
             </header>
             <main className="px-5">
                 <Hero />
+                <TechStack />
             </main>
             <footer className="px-5">
                 {children}
