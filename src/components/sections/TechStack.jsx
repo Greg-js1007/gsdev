@@ -1,13 +1,13 @@
 import CardStack from "../ui/CardStack";
-import { Boxes } from 'lucide-react';
+import { Boxes, Palette, CodeXml, Sparkles, Database } from 'lucide-react';
 
 const TechStack = () => {
     const Stacks = [
-        { title: "React / Next.js", description: "Interfaces declarativas, escalables y de alto rendimiento.", icon: Boxes, label: "Frontend Core" },
-        {title: "TypeScript", description: "Tipado seguro que reduce bugs y mejora el desarrollo", icon: Boxes, label: "Code Safe"},
-        {title: "Node.js / Bun", description: "Construye APIs rápidas y escalables con entornos robustos.", icon: Boxes, label: "Runtime Core"},
-        {title: "Tailwind", description: "Diseño rápido y responsivo con un sistema de clases consistente.", icon: Boxes, label: "Styling System"}
-        
+        { title: "React / Next.js", description: "Interfaces declarativas, escalables y de alto rendimiento.", icon: Boxes, label: "Frontend Core",color: "text-icon-card-1" },
+        {title: "TypeScript", description: "Tipado seguro que reduce bugs y mejora el desarrollo", icon: CodeXml, label: "Code Safe",color: "text-icon-card-2"},
+        {title: "Node.js / Express", description: "Construye APIs rápidas y escalables con entornos robustos.", icon: Database, label: "Backend - APIs", color: "text-icon-card-1"},
+        {title: "Tailwind", description: "Diseño rápido y responsivo con un sistema de clases consistente.", icon: Palette, label: "Styling System", color: "text-icon-card-2"}, 
+        {title: "Performance", description: "Optimización para experiencias rápidas y fluidas.", icon: Sparkles, label: "Web Vitals", color: "text-icon-card-1"}
     ]
     return (
         <div className="pt-20">
