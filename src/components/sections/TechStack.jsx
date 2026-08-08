@@ -4,6 +4,9 @@ import { Boxes } from 'lucide-react';
 const TechStack = () => {
     const Stacks = [
         { title: "React / Next.js", description: "Interfaces declarativas, escalables y de alto rendimiento.", icon: Boxes, label: "Frontend Core" },
+        {title: "TypeScript", description: "Tipado seguro que reduce bugs y mejora el desarrollo", icon: Boxes, label: "Code Safe"},
+        {title: "Node.js / Bun", description: "Construye APIs rápidas y escalables con entornos robustos.", icon: Boxes, label: "Runtime Core"},
+        {title: "Tailwind", description: "Diseño rápido y responsivo con un sistema de clases consistente.", icon: Boxes, label: "Styling System"}
         
     ]
     return (
