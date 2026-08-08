@@ -8,7 +8,7 @@ const MainLayout  = ({children}) => {
             <header>
                 <Navbar />
             </header>
-            <main className="px-5">
+            <main className="px-5 lg:flex gap-10">
                 <Hero />
                 <TechStack />
             </main>
