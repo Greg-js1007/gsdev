@@ -1,4 +1,4 @@
-const Cards; = ({title, description, icon, label, color}) => {
+const Cards = ({title, description, icon, label, color}) => {
     const Icon = icon;
     return (
         <div className="flex flex-col items-start gap-4 bg-bg-darks/30 rounded-2xl p-6 border border-secondary ">
