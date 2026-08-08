@@ -1,4 +1,4 @@
-import CardStack from "../ui/CardStack";
+import Cards from "../ui/Cards";
 import { Boxes, Palette, CodeXml, Sparkles, Database } from 'lucide-react';
 
 const TechStack = () => {
@@ -14,7 +14,7 @@ const TechStack = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-center text-secondary text-start"><span className="text-primary-tx">Un stack afilado</span> <br />  para proyectos con carácter.</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
                 {Stacks.map((stack, index) => (
-                    <CardStack key={index} {...stack} />
+                    <Cards key={index} {...stack} />
                 ))}
             </div>
         </div>
