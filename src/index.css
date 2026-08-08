@@ -12,6 +12,8 @@
   --color-bg-darks: #0b0f18; /* (cards y popovers) */
   --color-nav-primary: #04070f; 
   --color-secondary: #9CA3AF;  /* (muted) */
+  --color-icon-card-2: #b259ff; /* (purple) */
+  --color-icon-card-1: #20c8ff; 
 }
 
 *{
