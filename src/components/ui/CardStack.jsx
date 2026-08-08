@@ -1,9 +1,9 @@
-const CardStack = ({title, description, icon, label}) => {
+const CardStack = ({title, description, icon, label, color}) => {
     const Icon = icon;
     return (
         <div className="flex flex-col items-start gap-4 bg-bg-darks/30 rounded-2xl p-6 border border-secondary ">
             <div className="w-full flex gap-2 justify-between items-center">
-                <Icon className="w-8 h-8 text-secundary-tx" />
+                <Icon className={`w-8 h-8 ${color}`} />
                 <span className="text-xs text-secondary font-secondary">{label}</span>
             </div>
             <div className="flex flex-col gap-2">
