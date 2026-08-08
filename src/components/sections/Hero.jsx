@@ -17,11 +17,9 @@ const Hero = () => {
     ]
     return(
         <section className="w-full md:w-3/5 pt-20">
-            <div>
-              Logo     
-            </div>
+            
             <div className="w-auto">
-                <h2 className="text-4xl font-bold text-primary-tx">
+                <h2 className="text-4xl font-bold text-primary-tx md:text-5xl">
                     Gregory <br /> Subero <span>.</span>
                 </h2>
                 <h1 className="text-lg text-primary-tx/80">
