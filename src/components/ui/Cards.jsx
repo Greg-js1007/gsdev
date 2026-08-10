@@ -1,7 +1,7 @@
-const Cards = ({title, description, icon, label, color}) => {
+const Cards = ({title, description, icon, label, color, borderHover}) => {
     const Icon = icon;
     return (
-        <div className="flex flex-col items-start gap-4 bg-bg-darks/30 rounded-2xl p-6 border border-secondary ">
+        <div className={`flex flex-col items-start gap-4 bg-bg-darks/30 rounded-2xl p-6 border border-secondary ${borderHover}`}>
             <div className="w-full flex gap-2 justify-between items-center">
                 <Icon className={`w-8 h-8 ${color}`} />
                 <span className="text-xs text-secondary font-secondary">{label}</span>
