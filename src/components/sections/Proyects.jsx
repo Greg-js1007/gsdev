@@ -4,10 +4,13 @@ const Projects = () => {
 
     const projects = [
         {
+            id: 1, 
+            date: '2025-01',
             title: "Ecommerce Premium",
             description: "Plataforma de e-commerce y gestión integrado y personalización de productos.",
             icon: ShoppingBag,
-            label: "https://github.com/GSUBERO/SastreriaPremium",
+            link: "https://github.com/GSUBERO/SastreriaPremium",
+            skills: ['React', 'Taiwlind', 'Framer']
                
         }
     ]
