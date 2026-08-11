@@ -1,4 +1,4 @@
-import Cards from "../ui/Cards"
+import CardProjects from "../ui/CardProjects";
 import { ShoppingBag } from 'lucide-react';
 const Projects = () => {
 
@@ -21,7 +21,7 @@ const Projects = () => {
             </div>
             <section>
                 {projects.map((project, id) => (
-                    <Cards 
+                    <CardProjects 
                         key={id} 
                         {...project}
                     />
