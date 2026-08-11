@@ -9,7 +9,7 @@ const MainLayout  = ({children}) => {
             <header>
                 <Navbar />
             </header>
-            <main className="flex flex-col px-5 lg:flex lg:flex-row gap-10 lg:px-20">
+            <main className="flex flex-col px-5 lg:flex lg:flex-row gap-20 lg:px-20">
                 <Hero />
                 <div className="flex flex-col">
                     <TechStack />
