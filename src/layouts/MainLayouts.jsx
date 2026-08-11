@@ -1,6 +1,7 @@
 import Hero from "../components/sections/Hero";
 import Navbar from "../components/sections/Navbar";
 import TechStack from "../components/sections/TechStack";
+import Projects from "../components/sections/Proyects";
 
 const MainLayout  = ({children}) => {
     return (
@@ -8,9 +9,12 @@ const MainLayout  = ({children}) => {
             <header>
                 <Navbar />
             </header>
-            <main className="px-5 lg:flex gap-10">
+            <main className="flex flex-col px-5 lg:flex lg:flex-row gap-10 lg:px-20">
                 <Hero />
-                <TechStack />
+                <div className="flex flex-col">
+                    <TechStack />
+                    <Projects />
+                </div>
             </main>
             <footer className="px-5">
                 {children}
