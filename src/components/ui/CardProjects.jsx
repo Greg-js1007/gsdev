@@ -4,8 +4,8 @@ import Chip from "./Chip";
 const CardProjects = ({ date, title, description, skills, link }) => {
   return (
     <Cards>
-      <div>
-        <div className="flex justify-between">
+      <div className="w-full">
+        <div className="flex justify-between ">
           <p className="text-xs">{date}</p>
           <a href={link}>
             <ArrowUpRight className="text-primary-tx/50" />
