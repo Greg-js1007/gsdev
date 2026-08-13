@@ -22,7 +22,7 @@ const Hero = () => {
                 <h2 className="text-4xl font-bold text-primary-tx md:text-5xl">
                     Gregory <br /> <span className="text-secundary-tx">Subero</span> <span className="text-icon-card-2">.</span>
                 </h2>
-                <h1 className="text-lg text-primary-tx/80">
+                <h1 className="text-lg text-primary-tx/80 pt-2.5">
                     Software Developer 
                 </h1>
             </div>
