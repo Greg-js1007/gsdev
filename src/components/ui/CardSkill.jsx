@@ -1,7 +1,7 @@
 import Cards from "./Cards";
-const CardSkill = ({ title, description, icon: Icon, color, label }) => {
+const CardSkill = ({ title, description, icon: Icon, color, label, borderHover }) => {
   return (
-      <Cards>
+      <Cards borderHover={borderHover}>
         <div className="w-full flex gap-2 justify-between items-center">
           <Icon className={`w-8 h-8 ${color}`} />
           <span className="text-xs text-secondary font-secondary">{label}</span>
