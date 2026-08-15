@@ -30,10 +30,10 @@
   }
 }
 
-body {
+body,p, {
   font-family: 'Space Grotesk Variable', sans-serif;
 }
 
-p, a {
+ a {
   font-family: 'JetBrains Mono Variable', monospace;
 }
