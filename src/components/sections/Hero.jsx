@@ -1,4 +1,5 @@
 import Chip from "../ui/Chip";
+import Navbar from "../sections/Navbar";
 import SocialLink from "../ui/SocialLinks";
 import { FiGithub, FiLinkedin} from 'react-icons/fi';
 import { FaRegEnvelope } from "react-icons/fa";
@@ -25,6 +26,9 @@ const Hero = () => {
                 <h1 className="text-lg text-primary-tx/80 pt-2.5">
                     Software Developer 
                 </h1>
+                <div className=" pt-2.5">
+                <p className="border-l-2 pl-2 border-primary-tx">Caracas, Venezuela</p>
+            </div>
             </div>
             <section className="w-auto pt-2.5">
                 <div className="text-justify ">
@@ -40,12 +44,16 @@ const Hero = () => {
                     <Chip key={chip.id} number={chip.number} text={chip.text} />
                 ))}
             </section>
-            <section className="flex gap-5">
+            <header className="py-5">
+                <Navbar />
+            </header>
+             <section className="flex gap-5 py-2.5">
                 {social.map((item) => (
                     <SocialLink key={item.id} icon={item.icon} url={item.url} />
                 ))}
             </section>
-                
+            
+    
         </section>
     )
 }
