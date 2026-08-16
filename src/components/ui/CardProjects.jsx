@@ -12,7 +12,7 @@ const CardProjects = ({ date, title, description, skills, link }) => {
           </a>
         </div>
         <h2 className="text-3xl lg:text-4xl text-primary-tx font-primary font-bold py-2">{title}</h2>
-        <p className="py-2.5 text-sm">{description}</p>
+        <p className="py-2.5 text-md">{description}</p>
         <div className="flex gap-2 py-2.5">
           {skills.map((skill, id) => (
             <Chip text={skill} key={id} />
