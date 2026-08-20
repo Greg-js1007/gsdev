@@ -1,5 +1,7 @@
 import Card from "../ui/Cards";
 import InputForm from "../ui/inputForm";
+import Button from "../ui/Button";
+import { Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -7,17 +9,19 @@ import * as z from "zod";
 const schema = z.object({
     name: z.string().min(1, "Nombre es requerido"),
     email: z.string().email("Email inválido"),
+    subject: z.string().optional(),
     message: z.string().min(1, "Mensaje es requerido"),
 })
 
 const Contact = () => {
-    const { register, handleSubmit, formState: {errors} } = useForm();
-    const onSubmit = (data) => console.log(data);
+    const { register, handleSubmit, formState: {errors} } = useForm({resolver:zodResolver(schema)});
+
+    const onSubmit = (data) => console.log("Datos listos para enviar", data);
 
     const inputs = [
         {
             id: 1,
-            name: "nombre",
+            name: "name",
             placeholder: "Tu nombre",
             label: "Nombre",
             type: "text"
@@ -31,7 +35,7 @@ const Contact = () => {
         },
         {
             id: 3,
-            name: "asunto",
+            name: "subject",
             placeholder: "Colaboración, proyecto, trabajo",
             label: "Asunto (opcional)",
             type: "text"
@@ -55,9 +59,14 @@ const Contact = () => {
                     {inputs.map((input) => {
                     
                     return(
-                        <InputForm key={input.id} name={input.name} label={input.label} type={input.type} placeholder={input.placeholder} />
+                        <InputForm 
+                        key={input.id} 
+                        {...input} 
+                        register={register} 
+                        errors={errors[input.name]} />
                     )
                     })}
+                    <Button icon={<Send/>} text={"Enviar Mensaje"} />
                 </form>
         </Card>
         </section>       
