@@ -42,7 +42,7 @@ const Contact = () => {
         },
         {
             id: 4,
-            name:"mensaje",
+            name:"message",
             placeholder: "Cuéntame sobre tu proyecto...",
             label: "Mensaje",
             type: "textarea"
