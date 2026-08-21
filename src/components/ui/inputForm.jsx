@@ -1,11 +1,11 @@
 import { cn } from "../../lib/utils";
 
 const inputForm = ({ name, label, type, placeholder, className, register, error }) => {
-    const isFullWidth = name === "asunto" || name === "mensaje";
+    const isFullWidth = name === "subject" || name === "message";
     return (
         <div
             className={
-                `${isFullWidth ? "col-span-full grid" : ""}` + " flex flex-col gap-2"
+                `${isFullWidth ? "col-span-full grid" : ""}` + " flex flex-col gap-2 w-full"
             }
         >
             <label
