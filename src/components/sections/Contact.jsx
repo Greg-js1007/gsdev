@@ -27,7 +27,7 @@ const Contact = () => {
                 return;
             }
         const FormDataToSend = {
-            access_key:import.meta.env.WEB_FORM_API,
+            access_key:import.meta.env.VITE_WEB3FORMS_KEY,
             name: data.name,
             email: data.email,
             subject: data.subject || "Nuevo mensaje desde el portafolio",
