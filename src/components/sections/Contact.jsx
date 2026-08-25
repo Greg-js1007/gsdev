@@ -7,10 +7,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
 const schema = z.object({
-    name: z.string().min(1, "Nombre es requerido"),
+    name: z.string().min(3, "Nombre es requerido"),
     email: z.string().email("Email inválido"),
     subject: z.string().optional(),
-    message: z.string().min(1, "Mensaje es requerido"),
+    message: z.string().min(3, "Mensaje es requerido"),
+    botcheck: z.string().optional(),
 })
 
 const Contact = () => {
@@ -20,8 +21,13 @@ const Contact = () => {
 
     const onSubmit = async (data) => {
         try {
+
+            if(data.botcheck){
+                console.log("Bot detectado"); 
+                return;
+            }
         const FormDataToSend = {
-            accesskey:import.meta.env.WEB_FORM_API,
+            access_key:import.meta.env.WEB_FORM_API,
             name: data.name,
             email: data.email,
             subject: data.subject || "Nuevo mensaje desde el portafolio",
@@ -98,6 +104,12 @@ const Contact = () => {
                         errors={errors[input.name]} />
                     )
                     })}
+
+                    <input 
+                    type="botcheck" 
+                    name="botcheck" 
+                    {...register("botcheck")} className="hidden" />
+
                     <Button icon={<Send/>} text={"Enviar Mensaje"} />
                 </form>
         </Card>
