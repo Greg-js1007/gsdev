@@ -14,9 +14,41 @@ const schema = z.object({
 })
 
 const Contact = () => {
-    const { register, handleSubmit, formState: {errors} } = useForm({resolver:zodResolver(schema)});
+    const { register, handleSubmit, formState: {errors} } = useForm({resolver:zodResolver(schema)
+        
+    });
 
-    const onSubmit = (data) => console.log("Datos listos para enviar", data);
+    const onSubmit = async (data) => {
+        try {
+        const FormDataToSend = {
+            accesskey:import.meta.env.WEB_FORM_API,
+            name: data.name,
+            email: data.email,
+            subject: data.subject || "Nuevo mensaje desde el portafolio",
+            message: data.message,
+        }
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(FormDataToSend)
+        })
+
+        const result = await response.json();
+        
+        if(result.success){
+            alert("Mensaje enviado correctamente");
+        }else{
+            alert("Error al enviar el mensaje");
+        }
+        
+    } catch (error) {
+        console.log("Error", error);
+    }
+};
 
     const inputs = [
         {
@@ -70,7 +102,8 @@ const Contact = () => {
                 </form>
         </Card>
         </section>       
-    )
-} 
+    );
+}; 
 
-export default Contact; 
+
+export default Contact;     
