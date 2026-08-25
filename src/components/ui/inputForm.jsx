@@ -36,6 +36,7 @@ const inputForm = ({ name, label, type, placeholder, className, register, error 
                         "w-full h-10 p-2.5 text-primary-tx font-mono text-sm border border-white/10 bg-slate-950 backdrop-blur-sm rounded-lg focus:border-secundary-tx transition-all duration-300 ease-in-out outline-none",
                         className,
                     )}
+                    required
                 />
             )}
             {error && (
