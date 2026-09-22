@@ -3,6 +3,7 @@ import Navbar from "../components/sections/Navbar";
 import TechStack from "../components/sections/TechStack";
 import Projects from "../components/sections/Proyects";
 import Contact from "../components/sections/Contact";
+import Footer from "../components/sections/Footer";
 
 const MainLayout  = ({children}) => {
     return (
@@ -16,6 +17,7 @@ const MainLayout  = ({children}) => {
                 </div>
             </main>
             <footer className="px-5">
+                <Footer />
             </footer>
         </div>
     )
