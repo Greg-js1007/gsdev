@@ -2,6 +2,8 @@ import CardProjects from "../ui/CardProjects";
 import { ShoppingBag } from 'lucide-react';
 const Projects = () => {
 
+    const URLHotelPrincipal = "https://www.hotelgatuno.com/";
+    const URLHotel = URLHotelPrincipal || "https://hotelgatuno.vercel.app/"
     const projects = [
         {
             id: 1, 
@@ -19,7 +21,7 @@ const Projects = () => {
             title: "Hotel Gatuno",
             description: "Pagina web para presentar los servicios de un hotel para gatos",
             icon: ShoppingBag,
-            link: "https://www.hotelgatuno.com/m",
+            link: URLHotel,
             skills: ['Astro', 'Taiwlind', 'React.js']
                
         },
